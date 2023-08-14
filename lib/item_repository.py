@@ -33,7 +33,6 @@ class ItemRepository:
         elif list_arrangement == "name":
             return sorted(all_items, key=lambda item: item.name, reverse=reverse)
         elif list_arrangement == "id":
-            print(all_items)
             return sorted(all_items, key=lambda item: item.id, reverse=reverse)
         elif list_arrangement == "last_date_sold":
             return sorted(all_items, key=lambda item: item.last_date_sold, reverse=reverse)
@@ -43,6 +42,8 @@ class ItemRepository:
     def find_by_id(self, id):
         rows = self._connection.execute('SELECT * FROM items WHERE items.id = %s', [id])
         last_date_sold = self.get_last_date_sold(id)
+        if rows == []:
+            return False
         row = rows[0]
         return Item(row['id'], row['name'], float(Decimal(row['price'])),
                     row['stock'], row['amount_sold'], last_date_sold)

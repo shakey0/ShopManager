@@ -83,6 +83,7 @@ def test_find_by_id(db_connection):
     db_connection.seed('seeds/items_orders.sql')
     item_repository = ItemRepository(db_connection)
     assert item_repository.find_by_id(4) == Item(4, 'Apple Soap', 3.49, 28, 20, datetime.date(2023, 8, 7))
+    assert item_repository.find_by_id(14) == False
 
 def test_find_by_name(db_connection):
     db_connection.seed('seeds/items_orders.sql')
