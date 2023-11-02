@@ -2,7 +2,7 @@
 
 ## Introduction
 During week 5 of the Makers Academy bootcamp, I embarked on my introductory project involving PostgreSQL. The objective was to design an app for shop owners to efficiently manage their inventory and orders. At that juncture, I was still navigating the intricacies of Classes and OOP. Regrettably, I couldn't complete the CLI aspect of the project due to the progression into the subsequent phase of the bootcamp. Given the knowledge I've acquired since then, revisiting such a task would be met with enhanced precision and strategy.
-This is a test driven development where I wrote extensive tests for the model and repository classes before writing the code to pass those tests.
+- <em>This is a test driven development where I wrote extensive tests for the model and repository classes before writing the code to pass those tests.</em>
 
 ## Features
 
