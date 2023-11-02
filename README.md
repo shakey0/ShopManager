@@ -10,6 +10,9 @@ During week 5 of the Makers Academy bootcamp, I embarked on my introductory proj
 - When an order is placed, the details are added to the database:
     - The stock is adjusted.
     - A record of how many of each item in the order is added to the join table 'items_orders'.
+- Shop owners/workers can get a list of all the items and sort them in numerous different ways.
+    - (This part of the CLI is working.)
+    - (To see how I've coded this, see the 'get_all' method in 'item_repository.py')
 - Shop owners/workers can find an item by its ID and either delete it, change its price or update its stock.
 - Shop owners/workers can add new items.
 - Shop owners/workers can find an order by its ID and view the details of it.
