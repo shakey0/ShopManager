@@ -23,9 +23,9 @@ This is a test driven development where I wrote extensive tests for the model an
 - **items** (id, name, price, stock, amount_sold) - <em>many-to-many with orders through items_orders</em>
 - **orders** (id, customer_name, date) - <em>many-to-many with items through items_orders</em>
 
-**Join Table** - The first value here represents the item_id, and the third value represents the order_id.
+**Join Table** - The item_id joins the items table, and the order_id joins the orders table.
 
-- **users_peeps** (item_id, quantity, order_id) - This keeps track of which items were sold in which orders and how many of each specific item in each order.
+- **items_orders** (item_id, quantity, order_id) - This keeps track of which items were sold in which orders and how many of each specific item in each order.
 
 ## Installation & Setup
 
